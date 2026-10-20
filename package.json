@@ -1,0 +1,53 @@
+{
+  "name": "ai-monorepo-template",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI-first monorepo template: Vue3 frontend + FastAPI backend, pnpm workspace + Turborepo + SDD specs",
+  "packageManager": "pnpm@12.4.1",
+  "engines": {
+    "node": ">=20.0.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build --filter=!@repo/backend",
+    "dev": "turbo run dev --filter=!@repo/backend",
+    "lint": "turbo run lint --filter=!@repo/backend",
+    "lint:fix": "turbo run lint --filter=!@repo/backend -- --fix",
+    "test": "turbo run test --filter=!@repo/backend",
+    "typecheck": "turbo run typecheck --filter=!@repo/backend",
+    "format": "prettier --write \"**/*.{ts,tsx,mts,vue,js,mjs,json,md,yaml,yml,css,html}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,mts,vue,js,mjs,json,md,yaml,yml,css,html}\"",
+    "clean": "turbo run clean && rimraf node_modules",
+    "prepare": "husky",
+    "changeset": "changeset",
+    "version-packages": "changeset version",
+    "release": "turbo run build --filter=./packages/* && changeset publish",
+    "backend:dev": "pnpm --dir apps/backend run dev",
+    "backend:test": "pnpm --dir apps/backend run test"
+  },
+  "devDependencies": {
+    "@changesets/cli": "^2.29.0",
+    "@commitlint/cli": "^19.8.0",
+    "@commitlint/config-conventional": "^19.8.0",
+    "@eslint/js": "^9.20.0",
+    "eslint": "^9.20.0",
+    "eslint-config-prettier": "^10.0.0",
+    "eslint-plugin-vue": "^9.32.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.4.3",
+    "prettier": "^3.5.0",
+    "rimraf": "^6.0.1",
+    "turbo": "^2.5.0",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.24.0"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,mts,js,mjs,vue}": [
+      "eslint --fix",
+      "prettier --write"
+    ],
+    "*.{json,md,yaml,yml,css,scss,html}": [
+      "prettier --write"
+    ]
+  }
+}

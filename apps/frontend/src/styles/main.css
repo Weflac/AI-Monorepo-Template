@@ -1,0 +1,28 @@
+:root {
+  font-family:
+    'Inter',
+    system-ui,
+    -apple-system,
+    'PingFang SC',
+    'Microsoft YaHei',
+    sans-serif;
+  color: #111827;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f9fafb;
+}
+
+a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+a.router-link-exact-active {
+  font-weight: 600;
+}
