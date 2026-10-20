@@ -1,12 +1,12 @@
-import { resolve } from 'node:path';
-import { defineConfig } from 'vite';
+import { fileURLToPath, URL } from 'node:url';
+import { defineConfig } from 'vitest/config';
 import vue from '@vitejs/plugin-vue';
 
 export default defineConfig({
   plugins: [vue()],
   build: {
     lib: {
-      entry: resolve(__dirname, 'src/index.ts'),
+      entry: fileURLToPath(new URL('./src/index.ts', import.meta.url)),
       name: 'RepoComponents',
       fileName: 'index',
       formats: ['es'],

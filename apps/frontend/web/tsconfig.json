@@ -3,7 +3,6 @@
   "compilerOptions": {
     "jsx": "preserve",
     "types": ["vite/client", "vitest/globals"],
-    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"]
     }

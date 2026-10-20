@@ -2,7 +2,7 @@
 
 ## 环境要求
 
-- Node.js >= 20，pnpm >= 9（仓库已用 `packageManager` 锁定 pnpm 版本）
+- Node.js >= 22.22.1，pnpm >= 11（仓库已用 `packageManager` 锁定 pnpm 版本）
 - Python >= 3.11，[uv](https://docs.astral.sh/uv/)
 - Git（husky hooks 依赖）
 

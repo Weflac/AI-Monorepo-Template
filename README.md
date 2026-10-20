@@ -46,7 +46,7 @@
 ## 快速开始
 
 ```bash
-# 0. 环境：Node >= 20、pnpm >= 9、Python >= 3.11、uv
+# 0. 环境：Node >= 22.22.1、pnpm >= 11、Python >= 3.11、uv
 
 # 1. 安装 JS 依赖（自动配置 husky）
 pnpm install
