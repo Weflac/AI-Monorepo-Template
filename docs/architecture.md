@@ -16,15 +16,15 @@
 
 ## 目录职责
 
-| 目录                  | 职责                                                                    |
-| --------------------- | ----------------------------------------------------------------------- |
-| `apps/frontend`       | Web 前端（Vue3）。小程序/AI 应用作为新 app 平级扩展                     |
-| `apps/backend`        | FastAPI 后端，提供 `/api/v1` REST 接口，统一 `{code,message,data}` 包裹 |
-| `packages/components` | 跨端共享 Vue 组件库（内部包，源码直连消费）                             |
-| `packages/utils`      | 框架无关 TS 工具库（内部包，可 tsup 构建发布）                          |
-| `docs`                | 项目文档（架构、开发指南、SDD 流程、发布流程）                          |
-| `specs`               | SDD 规格文档：每个 feature 一个目录（spec → plan → tasks）              |
-| `build`               | 构建/交付相关：Dockerfile、docker-compose、CI/发布脚本                  |
+| 目录                  | 职责                                                                                   |
+| --------------------- | -------------------------------------------------------------------------------------- |
+| `apps/frontend`       | 前端应用集合：`web`（Vue3 Web 端）、`h5-weixin`（微信 H5/小程序）、`ai-web`（AI 应用） |
+| `apps/backend`        | FastAPI 后端，提供 `/api/v1` REST 接口，统一 `{code,message,data}` 包裹                |
+| `packages/components` | 跨端共享 Vue 组件库（内部包，源码直连消费）                                            |
+| `packages/utils`      | 框架无关 TS 工具库（内部包，可 tsup 构建发布）                                         |
+| `docs`                | 项目文档（架构、开发指南、SDD 流程、发布流程）                                         |
+| `specs`               | SDD 规格文档：每个 feature 一个目录（spec → plan → tasks）                             |
+| `build`               | 构建/交付相关：Dockerfile、docker-compose、CI/发布脚本                                 |
 
 ## 关键决策
 

@@ -6,3 +6,7 @@
 4，尽可能的使用目前流行的工程管理技术和架，至少要包含：pnpm workspace, monorepo, turborepo, packages, utils, docs,husky，vue3，TypeScript，其他有好用的没有提到的也可以使用尽可能齐全，要符合monorepo项目工程管理。
 5.项目结构必须要有的文件夹：apps,frontend,backend,packages,components,utils,docs,build
 6，最后一定要加一个readme.md项目阅读说明，还有考虑不周，不全的一并要补上
+
+## 补充-1
+
+7，在frontend下创建三个文件夹h5-weixin,web，ai-web,再将frontend下原来的文件全部转移到web下

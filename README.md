@@ -20,7 +20,10 @@
 ```
 .
 ├── apps/
-│   ├── frontend/            # Vue3 + Vite Web 前端（可扩展 miniapp / ai-web 等平级 app）
+│   ├── frontend/            # 前端应用集合
+│   │   ├── web/             # Vue3 + Vite Web 前端（@repo/frontend）
+│   │   ├── h5-weixin/       # 微信 H5 / 小程序端（@repo/h5-weixin，占位待初始化）
+│   │   └── ai-web/          # AI 应用前端（@repo/ai-web，占位待初始化）
 │   └── backend/             # FastAPI 后端（uv 管理，提供 /api/v1 REST 接口）
 ├── packages/
 │   ├── components/          # 共享 Vue 组件库 (@repo/components)

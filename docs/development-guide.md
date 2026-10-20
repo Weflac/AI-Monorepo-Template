@@ -28,7 +28,7 @@ cd apps/backend && uv sync   # 安装 Python 依赖
 
 ## 新增一个 app / package
 
-1. `apps/<name>` 或 `packages/<name>` 下创建 `package.json`（name 用 `@repo/<name>`）；
+1. `apps/<name>`、`apps/frontend/<name>` 或 `packages/<name>` 下创建 `package.json`（name 用 `@repo/<name>`，workspace 已包含 `apps/*`、`apps/frontend/*`、`packages/*`）；
 2. workspace 依赖写 `"@repo/utils": "workspace:*"`；
 3. 在 turbo 任务图内补齐 `build/dev/lint/test/typecheck` 脚本（缺省的任务会被 turbo 自动跳过）。
 

@@ -222,14 +222,18 @@ importers:
 
   apps/backend: {}
 
-  apps/frontend:
+  apps/frontend/ai-web: {}
+
+  apps/frontend/h5-weixin: {}
+
+  apps/frontend/web:
     dependencies:
       '@repo/components':
         specifier: workspace:*
-        version: link:../../packages/components
+        version: link:../../../packages/components
       '@repo/utils':
         specifier: workspace:*
-        version: link:../../packages/utils
+        version: link:../../../packages/utils
       axios:
         specifier: ^1.8.0
         version: 1.20.0(debug@4.4.3(supports-color@7.2.0))(supports-color@7.2.0)

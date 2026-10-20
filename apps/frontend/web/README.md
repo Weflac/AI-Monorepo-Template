@@ -20,5 +20,5 @@ pnpm --filter @repo/frontend build    # 产物输出到 dist/
 
 ## 扩展方向
 
-- `apps/frontend-miniapp`：uni-app / 微信小程序端，可复用 `@repo/components` 与 `@repo/utils`
-- AI 项目（如 chat 应用）：新增 `apps/ai-web`，同样复用 workspace 包
+- `../h5-weixin`：uni-app / 微信小程序端（占位已建），可复用 `@repo/components` 与 `@repo/utils`
+- `../ai-web`：AI 项目（如 chat 应用，占位已建），同样复用 workspace 包
